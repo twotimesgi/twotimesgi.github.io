@@ -69,6 +69,7 @@
   .msg{
     color: white;
     font-size: 50px;
+    margin-bottom: 10px;
   }
   
   .reset-button{
