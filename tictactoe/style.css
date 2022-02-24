@@ -43,10 +43,12 @@
   .cell:nth-child(3), .cell:nth-child(6), .cell:nth-child(9){
     border-right: 0;
   }
-  
-  .preview-effect:hover::before{
-    content: attr(data-sign);
-    opacity: 0.2;
+
+  @media (hover: hover) {
+    .preview-effect:hover::before{
+      content: attr(data-sign);
+      opacity: 0.2;
+    }
   }
   
   .overlay{
