@@ -30,7 +30,7 @@ function checkStatus() {
     }
   }
 
-  if (isComplete) {
+  if (isComplete && !finished) {
     msg_text = `Pareggio`;
     finished = true;
   }
