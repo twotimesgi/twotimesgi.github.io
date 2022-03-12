@@ -4,35 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Sorting Algorithm Visualizer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="calc">
-  <div type="text" id="res"></div>
-  <a data-func="C" class="btn oper">C</a>
-  <a data-func="+/-" class="btn oper">+/-</a>
-    <a data-func="%" class="btn oper">%</a>
-      <a data-func="÷" class="btn oper sign">÷</a>
-   <a data-func="7" class="btn num">7</a>
-  <a data-func="8" class="btn num">8</a>
-  <a data-func="9" class="btn num">9</a>
-  <a data-func="x" class="btn oper sign">x</a>
-  <a data-func="4" class="btn num">4</a>
-  <a data-func="5" class="btn num">5</a>
-  <a data-func="6" class="btn num">6</a>
-  <a data-func="-" class="btn oper sign">-</a>
-  <a data-func="1" class="btn num">1</a>
-  <a data-func="2" class="btn num">2</a>
-  <a data-func="3" class="btn num">3</a>
-    <a data-func="+" class="btn oper sign">+</a>
-  <a data-func="0" class="btn btn--zero num">0</a>
-  <a data-func="." class="btn num">,</a>
-    <a data-func="=" class="btn oper sign">=</a>
-    <script src="script.js"></script>
-</div>
+    <div id="root">
+        <header>
+            <div>
+                <span>Algorithm:</span>
+                <select v-model="sortingAlgorithm">
+                    <option value="0">bubbleSort O(N²)</option>
+                </select>
+            </div>
+            <div>
+                <span>N. of Elements:</span>
+                <input type="number" v-model="n" @change="getArray" max="100" min="5">
+            </div>
+            <div>
+                <span>Delay (ms):</span>
+                <input type="number" v-model="delay" max="2000" min="5">
+            </div>
+            <button v-on:click="startSort">{{isRunning ? 'Stop' : 'Start' }}</button>
+            <div>Iterations: {{ iterations }}</idv>
+        </header>
+        <main>
+        <div v-for="(element,index) in array" v-if="index < 200":class="index == j && i != array.length ? 'selected' : (index > array.length - 1 - i) && (isRunning) ? 'sorted' : ''" class="element" :style="'width: calc(100% / '+ n +'); height: calc((90% / '+ max +')*'+element+');'">
+            <span v-show="n < 60">{{ element }}</span>
+        </div>
+        </main>
+    </div>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+	<script src="script.js"></script>
 </body>
 </html>
