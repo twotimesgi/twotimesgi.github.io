@@ -11,7 +11,7 @@ var app = new Vue({
         delay: 10,
         isRunning: false,
         isSorted: false,
-        sortingAlgorithm: 0
+        sortingAlgorithm: "0"
     },
     methods: {
         getArray() {
@@ -56,7 +56,7 @@ var app = new Vue({
         },
         startSort(){
             if(!this.isRunning){
-                if(sortingAlgorithm == 0){
+                if(this.sortingAlgorithm == "0"){
                     this.bubbleSort();
                 }
             }
