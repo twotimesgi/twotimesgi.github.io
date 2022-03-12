@@ -13,7 +13,6 @@
 <body>
     <div id="root">
         <header>
-            <button v-on:click="startSort">Start</button>
             <div>
                 <span>Algorithm:</span>
                 <select v-model="sortingAlgorithm">
@@ -29,11 +28,14 @@
                 <span>Delay (ms):</span>
                 <input type="number" v-model="delay" max="2000" min="5">
             </div>
+            <button v-on:click="startSort">Start</button>
             <button @click="stopSort">Stop</button>
         </header>
+        <main>
         <div v-for="(element,index) in array" :class="index == j && i != array.length ? 'selected' : (index > array.length - 1 - i) && (isRunning) ? 'sorted' : ''" class="element" :style="'width: calc(100% / '+ n +'); height: calc((80% / '+ max +')*'+element+');'">
             <span v-show="n < 60">{{ element }}</span>
         </div>
+        </main>
     </div>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 	<script src="script.js"></script>
