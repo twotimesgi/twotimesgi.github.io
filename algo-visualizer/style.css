@@ -86,9 +86,9 @@ input{
 
 @media screen and (max-width: 900px) {
     .element span{
-        display: none;
+        font-size: 6px;
     }
-    header div, header button{
-        width: 51%;
+    header{
+        flex-direction: column;
     }
 }

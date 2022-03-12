@@ -5,16 +5,18 @@ var app = new Vue({
         array: [],
         max: 0,
         timer: null,
-        n: 55,
+        n: 30,
         i: -2,
         j: -2,
-        delay: 10,
+        delay: 100,
         isRunning: false,
         isSorted: false,
-        sortingAlgorithm: "0"
+        sortingAlgorithm: "0",
+        iterations: 0
     },
     methods: {
         getArray() {
+            this.iterations = 0;
             this.isRunning = false;
             this.i = -2;
             this.j = -2;
@@ -30,7 +32,7 @@ var app = new Vue({
             this.isRunning = true;
             for (this.i = 0; this.i < this.array.length && this.isRunning; this.i += 1) {
                 for (this.j = 0; this.j < this.array.length - this.i - 1 && this.isRunning; this.j += 1) {
-        
+                    this.iterations++;
                     // wait here
                     await new Promise((resolve) =>
                         setTimeout(() => {
