@@ -213,7 +213,7 @@ body{
     background-image: url(../img/blurred.jpg);
 } 
 
-.season-selector-show{s
+.season-selector-show{
     display: flex;
     gap: 30px; 
     opacity: 1;
