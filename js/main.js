@@ -7,21 +7,21 @@ var app = new Vue({
                 episodes:
                     [
                         {
-                            title: "The Business Guy!",
+                            title: "Bachelor Degree in Business&Management @ University of Turin",
                             when: "Sept 2018 - June 2021",
-                            description: "Luigi begins his university studies at SAA - University of Turin, he graduates in Business & Management in English despite the outbreak of a worldwide pandemic.",
+                            description: "The course is designed to provide a broad knowledge and awareness of business management in international and global contexts. Students will acquire skills in management, key business processes, organization and decision-making in international companies. Delivered entirely in English.",
                             thumb: "img/saa.jpg"
                         },
                         {
-                            title: "Blockchain? Stonks!",
+                            title: "Master in Blockchain & Digital Assets @ MasterZ",
                             when: "Jan 2022 - May 2022",
-                            description: "Luigi is awarded a 100% scholarship from AIO Blockchain to attend the second edition of MasterZ. Blockchain, Smart Contracts, Token and NFT, Cryptocurrencies, DeFi, Legal Aspects, Corporate and Startup use cases are some of the topics covered by this Master.",
+                            description: "Awarded a 100% scholarship from AIO Blockchain to attend the second edition of MasterZ. Blockchain, Smart Contracts, Token and NFT, Cryptocurrencies, DeFi, Legal Aspects, Corporate and Startup use cases are some of the topics covered by this Master.",
                             thumb: "img/blockchain.jpg" 
                         },
                         {
-                            title: "The Bootcamp",
+                            title: "Web Dev Bootcamp @ Boolean Careers",
                             when: "Jan 2022 - June 2022",
-                            description: "Luigi rediscovers his old passion for programming. He jumps in with both feet and starts a Bootcamp (Boolean Careers) of 6 months and about 800 hours to become a Web Developer! During this experience he learns HTML, CSS, JavaScript, PHP, Vue.js, Laravel, Sass.",
+                            description: "Full-time live course lasting 6 months (about 700 hours) for the development of skills as Full Stack Web Developer. Upon completion of the course the student will have mastered HTML, CSS, JavaScript, PHP, Vue.js, Laravel, Sass.",
                             thumb: "img/duck.jpg" 
                         }
                     ]
@@ -31,61 +31,37 @@ var app = new Vue({
                 episodes:
                     [
                         {
-                            title: "Jeff Bezos Wannabe", 
+                            title: "Amazon Seller @ LBG  (Self-Employed)", 
                             when: "Sept 2018 - Sept 2019",
                             description: "Luigi launches DADA, a brand of baby products on Amazon.com, meanwhile his room fills up with more and more unsold products. He recovers his investment and learns a valuable lesson about the power of branding. ",
                             thumb: "img/stock.jpg"
                         },
                         {
-                            title: "Ka-Ching!",
+                            title: "Performance Marketer @ LBG (Self-Employed)",
                             when: "Jan 2020 - Dec 2021",
-                            description: "Luigi begins to create landing pages and e-commerce for his clients. In the same period he launches some Shopify brands, after dozens of attempts and a lot of study he manages to generate more than 700€/day with a net of 40% with a single store. During this experience he learns valuable skills in copywriting, performance marketing and graphic design.",
+                            description: "Brand Identity design, professional E-commerce creation using Shopify, management of paid traffic campaigns and Influencer Marketing. Funnel design and creation of landing pages. In the same period I launched different Shopify brands. After dozens of attempts and a lot of study I managed to generate more than 700€/day with a net of 40% with a single store. During this experience I learnt valuable skills in copywriting, performance marketing and graphic design.",
                             thumb: "img/dollars.jpeg"
                         },
-                        {
-                            title: "Ka-Ching!",
-                            when: "2020 - 2019",
-                            description: "Luigi begins to create landing pages and e-commerce for his clients. In the same period he launches some Shopify brands, after dozens of attempts and a lot of study he manages to generate more than 700€/day with a net of 40% with a single store. During this experience he learns valuable skills in copywriting, performance marketing and graphic design.",
-                            thumb: "img/dollars.jpeg"
-                        }
                     ]
             },
             {
-                title: "Skills",
+                title: "Courses",
                 episodes:
                     [
                         {
-                            title: "Sara Croce",
-                            when: "2018 - 2019",
-                            description: "Micheal si sente escluso quando il resto dell'ufficioo spettegola sugli stagisti. Nel frattempo, girano voci che mettono in dubbio l'eterosessualità di andy.",
-                            thumb: "https://picsum.photos/140/82"
+                            title: "Algo Expert Certification @ AlgoExpert.io",
+                            when: "Feb 2022",
+                            description: "The course explains in detail many of the aspects related to Data Structures, Memory, Big O notation, Time Complexity and Space Complexity. In addition the course includes step by step explanations of more than 160 algorithms.",
+                            thumb: "img/alan.jpg"
                         },
                         {
-                            title: "La riunione",
+                            title: "Master in Social Media Strategy @ Creators Academy",
                             when: "2018 - 2019",
-                            description: "Micheal si sente escluso quando il resto dell'ufficioo spettegola sugli stagisti. Nel frattempo, girano voci che mettono in dubbio l'eterosessualità di andy.",
+                            description: "",
                             thumb: "https://picsum.photos/140/82"
                         }
                     ]
-            },
-            {
-                title: "Other Shit",
-                episodes:
-                    [
-                        {
-                            title: "Gossip",
-                            when: "2018 - 2019",
-                            description: "Micheal si sente escluso quando il resto dell'ufficioo spettegola sugli stagisti. Nel frattempo, girano voci che mettono in dubbio l'eterosessualità di andy.",
-                            thumb: "https://picsum.photos/140/82"
-                        },
-                        {
-                            title: "La riunione",
-                            when: "2018 - 2019",
-                            description: "Micheal si sente escluso quando il resto dell'ufficioo spettegola sugli stagisti. Nel frattempo, girano voci che mettono in dubbio l'eterosessualità di andy.",
-                            thumb: "https://picsum.photos/140/82"
-                        }
-                    ]
-            },
+            }
         ],
         appStatus : {
             currentSeason: 0,
