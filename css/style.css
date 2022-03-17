@@ -210,10 +210,10 @@ body{
     transition: opacity 0.1s linear;
     background-size: cover;
     opacity: 0;
-    background-image: url(../img/bg.png);
-}
+    background-image: url(../img/blurred.jpg);
+} 
 
-.season-selector-show{
+.season-selector-show{s
     display: flex;
     gap: 30px; 
     opacity: 1;
