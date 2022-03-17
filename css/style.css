@@ -7,16 +7,25 @@
 body{
     background-color: rgb(12, 12, 12);
     color: white;
+    max-width: 500px;
     font-family: 'Martel Sans', sans-serif;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app{
+    width: 500px;
 }
 
 .hero{
     width: 100%;
     position: relative;
     height: 50vw; 
+    max-height: 300px;
     background-image: url("../img/hero.jpg");
     background-position: center;
     background-size: cover;
@@ -201,7 +210,7 @@ body{
     transition: opacity 0.1s linear;
     background-size: cover;
     opacity: 0;
-    background-image: url(../img/blurred.jpg);
+    background-image: url(../img/bg.png);
 }
 
 .season-selector-show{
