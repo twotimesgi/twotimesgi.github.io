@@ -17,7 +17,6 @@
 
 <body>
     <div id="app">
-        <div class="blur-container" :class="appStatus.seasonSelectorShow ? 'blurred' : ''"> 
             <header>
                 <section class="hero">
                     <div class="hero__btn-container top">
@@ -64,7 +63,7 @@
             </header>
             <main>
                 <section class="episodes">
-                    <div @click="toggleSeasonSelector()" class="season-selector-toggle">Season {{appStatus.currentSeason
+                    <div @click="toggleSeasonSelector" class="season-selector-toggle">Season {{appStatus.currentSeason
                         + 1}}: {{ seasons[appStatus.currentSeason].title }}
                         <span class="material-icons">expand_more</span>
                     </div>
@@ -86,14 +85,12 @@
                     </div>
                 </section>
             </main>
-        </div>
-        <div class="season-selector" :class="appStatus.seasonSelectorShow ? 'season-selector-show' : ''">
+            <div class="season-selector" :class="appStatus.seasonSelectorShow ? 'season-selector-show' : ''" >
             <div v-for="(season, index) in seasons" @click="changeCurrentSeason(index)"
                 :class="index == appStatus.currentSeason ? 'season--active':''" class="season">{{season.title}}</div>
             <div @click="toggleSeasonSelector" class="close-btn">                            
                 <span class="material-icons">clear</span>
             </div>
-        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="js/main.js"></script>
