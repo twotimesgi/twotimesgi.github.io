@@ -2,7 +2,7 @@
 <h1 align="center">Hi 👋, I'm Luigi</h1>
 <h3 align="center">A passionate full stack web developer from Italy</h3>
 
-- 🌱 I’m currently learning **Solidity**
+- 🌱 I’m currently learning **Solidity** and **React**
 
 - 📫 How to reach me **luigibardellagerbi@mail.com**
 
