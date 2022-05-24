@@ -4,7 +4,13 @@
 
 - 🌱 I’m currently learning **Solidity** and **React**
 
-- 📫 How to reach me **luigibardellagerbi@mail.com**
+<ul>
+  <li>💻 Projects I'd like you to see:</li>
+  <ul>
+    <li><a href="https://twotimesgi.github.io/vue-boolzapp/index.html">Whatsapp replica made with Vue.js</a></li>
+  </ul>
+</ul>
+- 
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
