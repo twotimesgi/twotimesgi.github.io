@@ -4,10 +4,9 @@
   <ul>
     <li>Light/Dark mode</li>
     <li>Delete message (If all the messages are deleted the conversation will be deleted too)</li>
-    <li>New Conversation (try to search "Alby")</li>
     <li>Send and Receive messages</li>
     <li>Emoji selector</li>
-    <li>Search conversation</li>
+    <li>Search Conversations</li>
   </ul>
   </p>
 </div>
