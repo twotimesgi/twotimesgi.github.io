@@ -1,16 +1,15 @@
 # twotimesgi.github.io
-<h1 align="center">Hi 👋, I'm Luigi</h1>
-<h3 align="center">A passionate full stack web developer from Italy</h3>
-
-- 🌱 I’m currently learning **Solidity** and **React**
-
-<ul>
-  <li>💻 Projects I'd like you to see:</li>
+  <h3><a href="https://twotimesgi.github.io/vue-boolzapp/index.html">WhatsApp replica made with Vue.js</a></h3>
+  <p>Features:
   <ul>
-    <li><a href="https://twotimesgi.github.io/vue-boolzapp/index.html">Whatsapp replica made with Vue.js</a></li>
+    <li>Light/Dark mode</li>
+    <li>Delete message (If all the messages are deleted the conversation will be deleted too)</li>
+    <li>New Conversation (try to search "Alby")</li>
+    <li>Send and Receive messages</li>
+    <li>Emoji selector</li>
   </ul>
-</ul>
-- 
+  </p>
+</div>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
