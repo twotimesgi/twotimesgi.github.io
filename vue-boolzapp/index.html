@@ -157,7 +157,7 @@
                         <div class="message">{{ message.text }}</div>
                         <span class="message-menu-toggle" @click="msgMenu()">
                             <i :class="message.media != null ? 'icon--white':''" class="fa-solid fa-chevron-down"></i>
-                            <div :class="isMenuOpen ? 'message-menu-show' : ''" class="message-menu">
+                            <div @mouseout="msgMenu()" :class="isMenuOpen ? 'message-menu-show' : ''" class="message-menu">
                                 <ul>
                                     <li role="button" @click="deleteMsg(index)">Delete message</li>
                                     <li>Info</li>
