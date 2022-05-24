@@ -13,11 +13,8 @@ Features:
   <h3><a href="https://twotimesgi.github.io/vue-boolzapp/index.html">Front-end: Spotify responsive replica (plain html and css)</a></h3>
   Features:
   <ul>
-    <li>Light/Dark mode</li>
-    <li>Delete message (If all the messages are deleted the conversation will be deleted too)</li>
-    <li>Send and Receive messages</li>
-    <li>Emoji selector</li>
-    <li>Search Conversations</li>
+    <li>4 different breakpoints</li>
+    <li>Made with flexbox</li>
   </ul>
   </p>
 </div>
