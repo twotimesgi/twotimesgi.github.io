@@ -7,6 +7,7 @@
     <li>New Conversation (try to search "Alby")</li>
     <li>Send and Receive messages</li>
     <li>Emoji selector</li>
+    <li>Search conversation</li>
   </ul>
   </p>
 </div>
