@@ -16,7 +16,6 @@ Features:
     <li>Mobile first approach</li>
     <li>Made with flexbox</li>
     <li>Hover effects</li>
-    <li>Hover effects</li>
   </ul>
   </p>
 </div>
