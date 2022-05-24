@@ -162,6 +162,7 @@ var app = new Vue({
         },
         chatSwitch(contact){
             this.currentChat = contact;
+            this.isMenuOpen= false;
             this.scrollToLast();
         },
         isFirstMsg(message,index){
@@ -233,7 +234,8 @@ var app = new Vue({
                 this.contactStatus = "";
             },4000);
         },
-        msgMenu(){
+        msg
+        (){
             this.isMenuOpen = !this.isMenuOpen;
         },
         deleteMsg(index){
