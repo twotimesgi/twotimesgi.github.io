@@ -234,8 +234,7 @@ var app = new Vue({
                 this.contactStatus = "";
             },4000);
         },
-        msg
-        (){
+        msgMenu(){
             this.isMenuOpen = !this.isMenuOpen;
         },
         deleteMsg(index){
