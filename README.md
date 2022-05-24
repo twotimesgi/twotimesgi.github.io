@@ -13,8 +13,10 @@ Features:
   <h3><a href="https://twotimesgi.github.io/vue-boolzapp/index.html">Front-end: Spotify responsive replica (plain html and css)</a></h3>
   Features:
   <ul>
-    <li>4 different breakpoints</li>
+    <li>Mobile first approach</li>
     <li>Made with flexbox</li>
+    <li>Hover effects</li>
+    <li>Hover effects</li>
   </ul>
   </p>
 </div>
