@@ -1,0 +1,624 @@
+:root{
+    --border: rgb(73, 73, 73);
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 9pt; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: #141921;
+    color: white;
+} 
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Reset stile bottoni */
+button{
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* Tutti i bottoni hanno opacity 0.5 tranne quello nell'header */
+button:not(.banner__btn){
+    opacity: 0.5;
+}
+
+.mbottom20{
+    margin-bottom: 20px;
+}
+
+.banner{
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 0; 
+    position: fixed;
+    width: 100%;
+    min-height: 5em;
+    z-index: 99;
+}
+
+.banner__btn{
+    border-radius: 50px;
+    border: 1px solid white;
+    color: white;
+    padding: 0.6em 2em;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+
+.nav{
+    background-color: black;
+    height: 100vh;
+    left: 0;
+    width: 50px;
+    position: fixed;
+    top: 0;
+    padding-top: 1em; 
+    padding-bottom: 8rem; 
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav ul{
+    list-style: none; 
+}
+
+.nav__section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.nav li{
+ line-height: 3rem;
+ font-weight: bold; 
+ position: relative;
+ text-align: center; 
+}
+
+.nav__text, .nav__content-scrollable{
+    display: none;
+}
+
+.nav__section--flexend{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+}
+  
+.nav__content-scrollable {
+    flex-grow: 1;
+    overflow-y: auto;  
+    min-height: 0;
+}
+
+.nav__icon{
+    width: 25px;
+    vertical-align:-50%;
+}
+
+.nav__icon-square{
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    display: inline-block;
+    vertical-align: -15%; 
+    color: black;
+    font-size: 25pt;
+    text-align: center;
+    line-height: 2.8rem;
+}
+
+.nav__icon-circle{
+    width: 25px;
+    height: 25px;
+    overflow-y: hidden;
+    background-color: grey; 
+    display: inline-block;
+    border-radius: 25px; 
+    vertical-align: middle;
+}
+
+.nav__install{
+    border-bottom: 1px solid transparent;
+    margin-bottom: 5px;
+}
+
+.nav__user{
+    font-size: 12pt;
+}
+
+.nav__icon-circle img{
+    width: 100%;
+}
+
+.nav__icon-install{
+    width: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.nav__logo{
+    width: 150px;
+    display: none;
+}
+
+.nav__logo-small{
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.nav__title{
+    text-transform: uppercase;
+    display: none;
+}
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    padding: 6em 1em 8rem 5em;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.wrapper__menu{
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.wrapper__menu-item{
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+    position: relative;
+}
+
+.wrapper__menu .wrapper__menu-item.active::after{
+    content: "";
+    position: absolute;
+    background-color: #95ffac;
+    height: 3px;
+    display: block;
+    width: 35px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wrapper__menu .wrapper__menu-item button.active{
+    opacity: 1;
+}
+
+.nav ul li.active::after{
+    content: "";
+    position: absolute;
+    background-color: #95ffac;
+    height: 3rem;
+    display: block;
+    width: 4px;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+}
+
+.nav ul li button.active{
+    opacity: 1;
+}
+
+.wrapper__menu-item button{
+    text-transform: uppercase;
+}
+
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.8em;
+    margin-top: 3em;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.section__title{
+    width: 100%;
+    font-size: 2rem;
+}
+
+/* Aggiunge il margine quando non c'è .section__subtitle */
+.section__title--mbottom{
+    margin-bottom: 0.8em;
+}
+
+.section__subtitle{
+    opacity: 0.5;
+    font-weight: normal;
+    margin-bottom: 1.8em;
+    width: 100%;
+}
+
+.item{
+    flex-basis: calc(50% - 0.8em);
+}
+
+.item__cover{
+    width: 100%;
+}
+
+.item__img{
+    position: relative;
+}
+
+.item__overlay{
+    position: absolute;
+    inset: 0;
+    background-color:  rgba(0,0,0,0.5);
+    display: none;
+}
+
+.item__play{
+    width: 5rem;
+    height: 5rem; 
+    border: 7px solid;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+.item__play .fa-play{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-55%,-50%);
+    font-size: 25pt;
+}
+
+
+.item__title, .item__author{
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 0.5em;
+}
+
+.item__title{
+    font-size: 1.2rem;
+}
+
+.item__author{
+    opacity: 0.5;
+}
+
+/* Modifier copertina cerchio*/
+.item__cover--circle{
+    border-radius: 100%;
+}
+
+.footer{
+    background-color: #282828;
+    border-top: 1px solid var(--border);
+    bottom: 0;
+    left: 0;
+    min-height: 7rem;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 101;
+    padding-right: 10px;
+}
+
+.footer > div{
+    flex-grow: 0;
+    display: flex;
+    flex-basis: 25%; 
+}
+
+.footer .player{
+    flex-basis: 50%;
+}
+
+.playing{
+    justify-content: flex-start;
+}
+
+.player{
+    padding: 0 1em; 
+    flex-direction: column;
+    gap: 0.8em;
+    flex-grow: 1;
+    justify-content: center; 
+}
+
+.playing .playing__cover{
+    flex-grow: 0;
+    margin: 0 1em;
+    align-self: center;
+    flex-basis: fit-content;
+}
+
+.playing .playing__cover img{
+    width: 100%;
+    max-width: 35px;
+    min-width: 25px;
+}
+
+.playing__info{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: fit-content;
+}
+
+.playing__info h4{
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.playing__info span{
+    width: 100%;
+    flex-grow: 0;
+}
+
+.playing__info button{
+    font-size: 0.8em;
+    opacity: .5;
+}
+
+.playing__actions{
+    padding-left: 1.5em;
+    flex-basis: fit-content;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px; 
+}
+
+.playing__actions button{
+    font-size: 1.1rem;  
+    opacity: .5;
+}
+
+.player__controls{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    gap: 1.5em; 
+}
+
+.player__play{
+    width: 2.4rem;
+    height: 2.4rem; 
+    border: 3px solid;
+    border-radius: 100%;
+    position: relative;
+}
+
+.player__controls > div > i{
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%,-50%);
+}
+
+.player__status{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.bar{
+    height: 4px;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.player__progress-bar{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    max-width: 30rem; 
+}
+
+.player__progress{
+    width: 0%;
+    background-color: white;
+    max-width: 30rem; 
+    animation: play-animation linear 275s;
+}
+
+@keyframes play-animation {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.options{
+    display: flex;
+    flex-basis: 20%;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.options > *{
+    flex-grow: 0;
+}
+
+.options__volume{
+    display: flex;
+    align-items: center;
+}
+.options__volume-bar{
+    width: 100%;
+    min-width: 4em;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-left: 5px;
+}
+
+.options__volume-status{
+    width: 60%;
+    background-color: white;
+}
+
+/* Aggiungo effetti hover solo se supportati */
+@media (hover: hover){
+    .banner__btn:hover {
+        transform: scale(1.1);
+    }
+
+    .player__progress-bar:hover .player__progress::after{
+        content: "";
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        background-color: rgb(224, 224, 224);
+        position: absolute;
+        right: -6px;
+        top: -4px;
+    }
+
+    .player__progress-bar:hover .player__progress{
+        background-color: #95ffac;
+    }
+
+    .options__volume-bar:hover .options__volume-status{
+        background-color: #95ffac;
+    }
+
+    .options__volume-bar:hover .options__volume-status::after{
+        content: "";
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        background-color: rgb(224, 224, 224);
+        position: absolute;
+        right: -6px;
+        top: -4px;
+    }
+
+    .player__play:hover{
+        transform: scale(1.1);
+    }
+
+    button:hover{
+        opacity: 1;
+    }
+
+    .item:hover .item__play, .item:hover .item__overlay{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 600px){
+
+    .wrapper{
+        padding-left: 270px;
+    }
+    .mright10{
+        margin-right: 10px;
+    }
+
+    .playing__actions button:hover{
+        opacity: 1;
+    }
+
+    .playing__info button:hover{
+        opacity: 1;
+        text-decoration: underline;
+    }
+
+    .nav{
+        width: 250px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .nav li{
+        text-align: left;
+    }
+
+    .nav__logo-small{
+        display: none;
+    }
+
+    .nav__logo{
+        display: block;
+    }
+
+    .nav__title{
+        text-transform: uppercase;
+        display: block;
+    }
+
+    .nav__text, .nav__content-scrollable{
+        display: inline-block;
+    }
+
+    .nav__install{
+        border-color: rgb(31, 31, 31);
+    }
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 1100px){
+    .item{
+        flex-basis: calc(25% - 0.8em);
+    }
+}
+
+@media screen and (min-width: 1101px){
+    .item{
+        flex-basis: calc(100% / 6 - 0.8em);
+    }
+}
+

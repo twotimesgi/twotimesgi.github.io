@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+
+
+
+
+    <header class="nav">
+        <div class="nav__section">
+          <nav class="nav__content">
+              <img class="nav__logo-small mbottom20" src="img/logo-small.svg">
+              <img class="nav__logo mbottom20" src="img/logo.svg">
+            <ul class="mbottom20">
+              <li class="active"><button class="active"><img class="nav__icon mright10" src="img/home.svg"><span class="nav__text">Home</span></button></li>
+              <li><button><img class="nav__icon mright10" src="img/search.svg"><span class="nav__text">Cerca</span></button></li>
+              <li><button><img class="nav__icon mright10" src="img/libreria.svg"><span class="nav__text">La tua libreria</span></button></li>
+            </ul>
+        </nav>
+        <h4 class="nav__title mbottom20">Playlist</h4>
+        <div class="nav__content-scrollable nav__content">
+          <ul>
+            <li><button><span class="nav__icon-square mright10 mbottom20">+</span>Crea playlist</button></li>
+            <li><button>Nome playlist</button></li>
+            <li><button>Nome playlist</button></li>         
+            <li><button>Nome playlist</button></li>            
+            <li><button>Nome playlist</button></li>         
+            <li><button>Nome playlist</button></li>
+            <li><button>Nome playlist</button></li> 
+            <li><button>Nome playlist</button></li>          
+          </ul>
+        </div>
+        </nav>
+        <div class="nav__section nav__section--flexend">
+          <div class="nav__content">
+            <ul>
+              <li class="nav__install"><button><span class="nav__icon-install mright10"><img src="img/download.svg"></span><span class="nav__text">Installa app</span></button></li>
+              <li class="nav__user"><span class="nav__icon-circle mright10"><img src="img/profile.svg"></span><span class="nav__text">Pinco Pallo</span></li>
+            </ul>
+          </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <button class="banner__btn">Effettua l'upgrade</button>
+        </div>
+        <section class="wrapper">
+            <nav class="wrapper__menu">
+                <span class="wrapper__menu-item active"><button class="active">In evidenza</button></span>
+                <span class="wrapper__menu-item"><button>Podcast</button></span>
+                <span class="wrapper__menu-item"><button>Classifiche</button></span>
+                <span class="wrapper__menu-item"><button>Generi e mood</button></span>
+                <span class="wrapper__menu-item"><button>Nuove uscite</button></span>
+                <span class="wrapper__menu-item"><button>Scopri</button></span>
+            </nav>
+            <section class="section">
+                <h2 class="section__title section__title--mbottom">Ascoltate di recente</h2>
+                <div class="item">
+                    <div class="item__img">
+                        <img class="item__cover" alt="metal lifting" src="img/metal_lifting.jpg">
+                        <div class="item__overlay"></div>
+                        <div class="item__play"><i class="fas fa-play"></i></div>
+                    </div>
+                    <h4 class="item__title">Heavy Metal</h4>
+                    <span class="item__author">Subtitle</span>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img class="item__cover" alt="stranger" src="img/stranger.jpeg">
+                        <div class="item__overlay"></div>
+                        <div class="item__play"><i class="fas fa-play"></i></div>
+                    </div>
+                    <h4 class="item__title">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                    <span class="item__author">Kyle Dixon & Micheal Stein</span>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img class="item__cover" alt="a quiet place" src="img/aquietplace.jpeg">
+                        <div class="item__overlay"></div>
+                        <div class="item__play"><i class="fas fa-play"></i></div>
+                    </div>
+                    <h4 class="item__title">A quiet place</h4>
+                    <span class="item__author">Subtitle</span>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img class="item__cover" alt="split" src="img/split.jpeg">
+                        <div class="item__overlay"></div>
+                        <div class="item__play"><i class="fas fa-play"></i></div>
+                    </div>
+                    <h4 class="item__title">Split</h4>
+                    <span class="item__author">Subtitle</span>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img class="item__cover" alt="cure" src="img/cure.jpeg">
+                        <div class="item__overlay"></div>
+                        <div class="item__play"><i class="fas fa-play"></i></div>
+                    </div>
+                    <h4 class="item__title">A cure for wellness</h4>
+                    <span class="item__author">Subtitle</span>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img class="item__cover" alt="sinister" src="img/sinister.jpeg">
+                        <div class="item__overlay"></div>
+                        <div class="item__play"><i class="fas fa-play"></i></div>
+                    </div>
+                    <h4 class="item__title">Sinister</h4>
+                    <span class="item__author">Subtitle</span>
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section__title">Creato per Luigi</h2>
+                <h3 class="section__subtitle">Più ascolti, più accurati saranno i suggerimenti.</h3>
+                <div class="item">
+                    <div class="item__img">
+                        <img class="item__cover" alt="radar" src="img/radar.jpeg">
+                        <div class="item__overlay"></div>
+                        <div class="item__play"><i class="fas fa-play"></i></div>
+                    </div>
+                    <h4 class="item__title">Relase Radar</h4>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img class="item__cover" alt="mixdaily" src="img/mixdaily.jpeg">
+                        <div class="item__overlay"></div>
+                        <div class="item__play"><i class="fas fa-play"></i></div>
+                    </div>
+                    <h4 class="item__title">Daily Mix 1</h4>
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section__title">Artisti più popolari</h2>
+                <h3 class="section__subtitle">Più ascolti, più accurati saranno i suggerimenti.</h3>
+                <div class="item">
+                    <img class="item__cover item__cover--circle" alt="lana del rey" src="img/youg.jpeg">
+                    <h4 class="item__title">Lana del Rey</h4>
+                </div>
+                <div class="item">
+                    <img class="item__cover item__cover--circle" alt="einaudi" src="img/einaudi.jpeg">
+                    <h4 class="item__title">Ludovico Einaudi</h4>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="playing">
+            <div class="playing__cover"><img alt="sinister" src="img/sinister.jpeg"></div>
+            <div class="playing__info">
+                <h4>Sinister</h4>
+                <span><button>Brano</button></span>
+                <span><button>Album</button></span>
+            </div>
+            <div class="playing__actions">
+                <button><i class="far fa-heart"></i></button>
+                <button><i class="far fa-folder"></i></button>
+            </div>
+        </div>
+        <div class="player">
+            <div class="player__controls">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <div class="player__play"><i class="fas fa-play"></i></div>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo"></i>
+            </div>
+            <div class="player__status">
+                <div class="player__current-time">0:25</div>
+                <div class="player__progress-bar bar">
+                    <div class="player__progress bar"></div>
+                </div>
+                <div class="player__total-time">4:35</div>
+            </div>
+        </div>
+        <div class="options">
+            <i class="fas fa-list-ul"></i>
+            <i class="fas fa-desktop"></i>
+            <div class="options__volume"><i class="fas fa-volume-up"></i>
+                <div class="options__volume-bar bar">
+                    <div class="options__volume-status bar"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
