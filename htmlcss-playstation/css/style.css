@@ -1,0 +1,181 @@
+.ms_sony-logo{
+    width: 75px;
+}
+
+#jumbotron .row:first-child{
+    padding-top: 300px; 
+}
+
+.ms_mt-100px{
+    margin-top: 100px;
+}
+
+.ms_bg-1{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(../img/jumbo-bg.png);
+    background-position-x: center;
+    background-position-y: top;
+    background-size:cover;
+}
+
+.ms_bg-2{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),  url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.ms_bg-3{
+    background-color: rgb(185, 185, 185);
+}
+
+
+.ms_bg-4{
+    background-color: rgb(17, 32, 80);
+}
+
+.ms_bg-5{
+    background-color: rgb(22, 69, 150);
+}
+
+.banner-logo{
+    width: 80%;
+    max-width: 300px;
+}
+
+.ms_language-globe{
+    height: 15px;
+}
+
+.ms_sie-logo{
+    width: 150px;
+}
+
+.ms_rounded{
+    border-radius: 20px;
+}
+
+.ms_btn-src img{
+    height: 1.5rem;
+}
+
+.ms_dropdown-toggle::after{
+    font-family: "Font Awesome 5 Free"; 
+	font-weight: 900;
+    content: "\f078";
+    font-size: 0.8rem;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.nav-link.show.ms_dropdown-toggle::after{
+    transform: rotate(180deg);
+    color: rgb(49, 93, 203);
+}
+
+.ms_btn-red{
+    background-color: rgb(191, 72, 37) !important; 
+}
+
+.ms_ps5-item{
+    opacity: 0.6;
+}
+ 
+.ms_card{
+    transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
+}
+
+.ms_card--active{
+    box-shadow:  0 0 0 4px white,
+    0 0 0 6px rgb(0, 38, 206);
+}
+
+.scale-on-hover{
+    transition: transform 0.2s ease;
+}
+
+.dropdown-item{
+    border-radius: 15px !important; 
+}
+
+ul.list-inline .list-inline-item a{
+    color: black;
+    text-decoration: none;
+}
+
+ul.list-inline:not(.ms_icon-list) .list-inline-item::before{
+    content: "\2022";
+    color: rgb(49, 93, 203);
+    font-size: 25px;
+    vertical-align: -5%;
+    margin-right: 5px;
+}
+
+.nav-link:focus {
+    outline: none !important;
+}
+
+.ms_ps5-item{
+    border-bottom: 2px solid transparent;
+}
+
+.ms_ps5-item--active{
+    border-bottom: 2px solid rgb(49, 93, 203);
+    opacity: 1;
+}
+@media (hover: hover) {
+
+    .ms_ps5-item:hover {
+    border-bottom: 2px solid rgb(49, 93, 203);
+    opacity: 1;
+    }
+
+    ul.list-inline .list-inline-item a:hover{
+     color:rgb(49, 93, 203) !important;
+    } 
+
+    .dropdown-item:hover {
+    background-color: #ffffff !important; 
+    box-shadow: 0px 0px 7px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .scale-on-hover:hover{
+        transform: scale(1.05);
+    }
+
+    .ms_card--active:hover{
+    box-shadow:  0 0 0 4px white,
+                 0 0 0 6px rgb(49, 93, 203),
+                 0 10px 17px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10%);
+    }
+
+    .ms_card:hover:not(.ms_card--active){
+    transform: translateY(-10%);
+    box-shadow: 0 10px 7px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .ms_btn-red:hover{
+        box-shadow: inset 0px 0px 0px 3px black;
+        background-color: rgb(153, 52, 21);
+        border-color: rgb(191, 72, 37);
+    }
+
+    .btn-dark:hover{
+        box-shadow: inset 0px 0px 0px 3px white !important;
+        border-color: rgb(0, 0, 0);
+    }
+ 
+    .btn-primary:hover{
+        box-shadow: inset 0px 0px 0px 3px white !important;
+        border-color: rgb(50, 69, 208);
+    }
+
+    #banner-ps-plus .btn.bg-light:hover{
+        box-shadow: inset 0px 0px 0px 3px rgb(187, 187, 187) !important;
+        border-color: rgb(224, 224, 224); 
+    }
+
+    #banner-ps-now .btn.bg-light:hover{
+        box-shadow: inset 0px 0px 0px 3px rgb(49, 93, 203) !important;
+        border-color: rgb(224, 224, 224); 
+    }
+}
